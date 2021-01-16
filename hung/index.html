@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>How much is left until the spring break? | @TmsKoncz</title>
+<title>Mennyi van még a tavaszi szünetig? | @TmsKoncz</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">  
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
@@ -40,14 +40,14 @@
 <body>
 <main>
     
-    <h1>How much is left until the spring break?</h1>
-    <h4>Made by: Tamas Koncz (<a href="https://github.com/tmskoncz">Github</a>) (<a href="https://twitter.com/tmskoncz">Twitter</a>)</h4>
+    <h1>Mennyi van még a tavaszi szünetig?</h1>
+    <h4>Készítette: Koncz Tamás (<a href="https://github.com/tmskoncz">Github</a>) (<a href="https://twitter.com/tmskoncz">Twitter</a>)</h4>
     <div id="countdown">
     </div>
 
 <div id="bottom-line">
-	<a href="\hung/">Hungarian version // Magyar verzió</a>
-	<h4>Spring Break Countdown v1.0 | Made by: Tamas Koncz (<a href="https://github.com/tmskoncz">Source Code - Github</a>) (<a href="https://twitter.com/tmskoncz">Twitter</a>)</h4>
+	<a href="\eng/">English version</a>
+	<h4>Spring Break Countdown v1.0 | Készítette: Koncz Tamás (<a href="https://github.com/tmskoncz">Forráskód - Github</a>) (<a href="https://twitter.com/tmskoncz">Twitter</a>)</h4>
 </div>
     <script>
 var TavasziSzunet = new Date("April 1, 2021 15:00:00").getTime();
@@ -62,12 +62,12 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-  document.getElementById("countdown").innerHTML = days + " days<br>" + hours + " hours<br> "
-  + minutes + " minutes<br>" + seconds + " seconds<br>";
+  document.getElementById("countdown").innerHTML = days + " nap<br>" + hours + " óra<br> "
+  + minutes + " perc<br>" + seconds + " másodperc<br>";
     
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "Spring break is already began! Have a nice time!";
+    document.getElementById("countdown").innerHTML = "A tavaszi szünet a legtöbb helyen már elkezdődött! Kellemes időtöltést a kívánunk!";
   }
 }, 1000);
 </script>
